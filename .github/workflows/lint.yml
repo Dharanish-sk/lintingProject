@@ -16,7 +16,7 @@ jobs:
           node-version: '18'
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Run ESLint
+      - name: Run ESLint with npx
         run: npx eslint .
